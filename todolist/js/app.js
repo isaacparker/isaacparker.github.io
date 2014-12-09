@@ -44,7 +44,7 @@ var createNewTaskElement = function(taskString) {
   return listItem;
 }
 
-//Add a new task
+//Add a new task 
 var addTask = function() {
   console.log("Add task...");
   //Create a new list item with the text from #new-task:
