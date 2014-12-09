@@ -1,0 +1,201 @@
+/* Basic Style */
+body {
+    font-family: Lato, sans-serif;
+   height: 1200px;
+    background: -webkit-linear-gradient(#0d83d5, #20bbed, #4edcfb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0d83d5, #20bbed, #4edcfb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0d83d5, #20bbed, #4edcfb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0d83d5, #20bbed, #4edcfb); /* Standard syntax (must be last) */
+
+}
+IMG.logo {
+  display: block;
+  margin: 30px auto auto auto;
+}
+#sun {
+  position: absolute;
+  right: -100px;
+  top: -230px;
+ width: 385px; 
+ height: 386px;
+ z-index: -1;
+ background-image: url("images/sung.png");
+}
+#cloud1 {
+  position: absolute;
+  left: 20px;
+  top: 90px;
+ width: 386px; 
+ height: 386px;
+ z-index: -1;
+ background-image: url("images/cloud1.png");
+}
+#cloud2 {
+  position: absolute;
+  right: 40px;
+  top: 164px;
+ width: 174px; 
+ height: 121px;
+ z-index: -1;
+ background-image: url("images/cloud2.png");
+}
+#cloud3 {
+  position: absolute;
+  right: 120px;
+  top: 400px;
+ width: 208px; 
+ height: 140px;
+ z-index: -1;
+ background-image: url("images/cloud3.png");
+}
+
+.container {
+  display: block;
+  width: 400px;
+  margin: 60px auto 0;
+  border-width: 10;
+  border: 0px solid #c29710;
+
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button.edit, button.delete {
+  font-weight: bold;
+  background: none;
+  border: 0px;
+  color: #00B3E5;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: #ffbf00;
+}
+button.ad {
+  background: none;
+  border: 0px;
+  color: #ffbf00;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 60px;
+  margin: 16px 0 0 -70px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+
+}
+button.ad:hover {
+  color: #00B3E5;
+}
+/* Heading */
+h3,
+label[for='new-task'] {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  /* border-bottom: 2px solid #dfae64; */
+  padding: 8px 8px 8px;
+  margin: 0;
+  background-color: #ff3e00;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.1);
+border: none;
+}
+input[type="text"]:focus {
+  color: #00dcff;
+}
+
+/* New Task */
+label[for='new-task'] {
+  display: block;
+  margin: 0px 0px 0px;
+}
+input#new-task {
+  float: left;
+  width: 380px;
+  height:38px;
+  margin: 0px 0px 20px;
+}
+p > button:hover {
+  color: #0FC57C;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 8px 0 8px 8px;
+  background-color: rgba(255, 255, 255, 1);
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 6px 0 6px 0;
+}
+  /* border-bottom: 1px solid #eee; */
+}
+input[type="checkbox"] {
+  margin: 100px;
+  position: relative;
+  top: 15px;
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li >  input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: #ffbf00;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
